@@ -40,8 +40,6 @@ const stats = [
   { value: "500+", label: "Faculty Members" },
 ]
 
-
-
 // Testimonials
 const testimonials = [
   {

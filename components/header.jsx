@@ -436,7 +436,6 @@ const topBarLinks = [
   { label: "ALUMNI", href: "/alumni" },
   { label: "OTHER", href: "/other" },
 ];
-<<<<<<< HEAD
 
 const megaHorizontalPosition = {
   About: "left-0",
@@ -445,8 +444,6 @@ const megaHorizontalPosition = {
   Admissions: "left-1/2 -translate-x-1/2",
   Campus: "left-1/2 -translate-x-1/2",
 };
-=======
->>>>>>> 6810fb77e29087991a8636f6bfe6bee895b46f18
 
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -550,14 +547,14 @@ export function Header() {
                 <div className="flex flex-col gap-0.5">
                   <a
                     href="tel:+918006345557"
-                    className="flex items-center gap-2 text-[#FD5F00] font-medium hover:underline text-sm"
+                    className="flex items-center gap-2 text-[#0891b2] font-medium hover:underline text-sm"
                   >
                     <Phone className="w-4 h-4" />
                     +91-80063-45557
                   </a>
                   <a
                     href="tel:+918006345558"
-                    className="flex items-center gap-2 text-[#FD5F00] font-medium hover:underline text-sm"
+                    className="flex items-center gap-2 text-[#0891b2] font-medium hover:underline text-sm"
                   >
                     <Phone className="w-4 h-4" />
                     +91-80063-45558
@@ -595,11 +592,7 @@ export function Header() {
         </div>
 
         {/* Main Navigation */}
-<<<<<<< HEAD
         <nav className="w-full bg-[#1A365D] hidden lg:block">
-=======
-        <nav className="container w-full   bg-[#1A365D] hidden md:block">
->>>>>>> 6810fb77e29087991a8636f6bfe6bee895b46f18
           <div className="flex items-center justify-center h-20 ">
             {/* Desktop Navigation */}
             <div className="hidden lg:flex items-center gap-1  ">
@@ -612,11 +605,7 @@ export function Header() {
                 >
                   <Link
                     href={item.href}
-<<<<<<< HEAD
                     className="flex items-center gap-1 py-2 px-4  font-medium text-md text-white hover:text-[#F46B13] transition-colors relative group"
-=======
-                    className="flex items-center gap-1 py-2 px-4  font-medium text-md text-white hover:text-[#ff7b1c] transition-colors relative group"
->>>>>>> 6810fb77e29087991a8636f6bfe6bee895b46f18
                   >
                     {item.label}
                     {(item.megaMenu || item.isProgrammesMega) && (
@@ -626,11 +615,7 @@ export function Header() {
                         }`}
                       />
                     )}
-<<<<<<< HEAD
                     <span className="absolute bottom-0 left-4 right-4 h-0.5 bg-[#F46B13] scale-x-0 group-hover:scale-x-100 transition-transform origin-left" />
-=======
-                    <span className="absolute bottom-0 left-4 right-4 h-0.5 bg-[#ff7b1c] scale-x-0 group-hover:scale-x-100 transition-transform origin-left" />
->>>>>>> 6810fb77e29087991a8636f6bfe6bee895b46f18
                   </Link>
 
                   {/* Programmes Mega Menu */}
@@ -652,30 +637,19 @@ export function Header() {
                           <div className="grid grid-cols-4 divide-x divide-grey-soft">
                             {/* ================= UNDERGRADUATE ================= */}
                             <div className="p-6">
-<<<<<<< HEAD
                               <h3 className="text-lg font-bold text-[#f46b13] mb-4">
                                 {programmesData.undergraduate.title}
                               </h3>
 
                               {/* 👇 COLUMN SCROLL */}
                               <div className="space-y-4 max-h-[60vh] overflow-y-auto pr-2">
-=======
-                              <h3 className="text-lg text-[#f46b13] font-bold  mb-4">
-                                {programmesData.undergraduate.title}
-                              </h3>
-                              <div className="space-y-4 max-h-100 overflow-y-auto pr-2">
->>>>>>> 6810fb77e29087991a8636f6bfe6bee895b46f18
                                 {programmesData.undergraduate.schools.map(
                                   (school, idx) => (
                                     <div key={idx}>
                                       <h4 className="text-sm font-semibold text-text-dark mb-1">
                                         {school.name}
                                       </h4>
-<<<<<<< HEAD
                                       <ul className="flex flex-wrap gap-3">
-=======
-                                      <ul className="space-y-0.5 flex gap-3 flex-wrap">
->>>>>>> 6810fb77e29087991a8636f6bfe6bee895b46f18
                                         {school.programs.map(
                                           (program, pIdx) => (
                                             <li key={pIdx}>
@@ -683,11 +657,7 @@ export function Header() {
                                                 href={`/academics?program=${encodeURIComponent(
                                                   program
                                                 )}`}
-<<<<<<< HEAD
                                                 className="text-sm text-[#f46b13] hover:underline transition"
-=======
-                                                className="text-sm text-[#f46b13] hover:text-[f46b13]-dark hover:underline transition-colors"
->>>>>>> 6810fb77e29087991a8636f6bfe6bee895b46f18
                                               >
                                                 {program}
                                               </Link>
@@ -706,23 +676,15 @@ export function Header() {
                               <h3 className="text-lg font-bold text-[#E65100] mb-4">
                                 {programmesData.postgraduate.title}
                               </h3>
-<<<<<<< HEAD
 
                               <div className="space-y-4 max-h-[60vh] overflow-y-auto pr-2">
-=======
-                              <div className="space-y-4 overflow-y-auto pr-2">
->>>>>>> 6810fb77e29087991a8636f6bfe6bee895b46f18
                                 {programmesData.postgraduate.schools.map(
                                   (school, idx) => (
                                     <div key={idx}>
                                       <h4 className="text-sm font-semibold text-text-dark mb-1">
                                         {school.name}
                                       </h4>
-<<<<<<< HEAD
                                       <ul className="flex flex-wrap gap-3">
-=======
-                                      <ul className="space-y-0.5 flex flex-wrap gap-3">
->>>>>>> 6810fb77e29087991a8636f6bfe6bee895b46f18
                                         {school.programs.map(
                                           (program, pIdx) => (
                                             <li key={pIdx}>
@@ -730,11 +692,7 @@ export function Header() {
                                                 href={`/academics?program=${encodeURIComponent(
                                                   program
                                                 )}`}
-<<<<<<< HEAD
                                                 className="text-sm text-[#f46b13] hover:underline transition"
-=======
-                                                className="text-sm text-[#f46b13] hover:text-[f46b13]-dark hover:underline transition-colors"
->>>>>>> 6810fb77e29087991a8636f6bfe6bee895b46f18
                                               >
                                                 {program}
                                               </Link>
@@ -753,23 +711,15 @@ export function Header() {
                               <h3 className="text-lg font-bold text-[#f46b13] mb-4">
                                 {programmesData.diploma.title}
                               </h3>
-<<<<<<< HEAD
 
                               <div className="space-y-4 max-h-[60vh] overflow-y-auto pr-2">
-=======
-                              <div className="space-y-4  overflow-y-auto pr-2">
->>>>>>> 6810fb77e29087991a8636f6bfe6bee895b46f18
                                 {programmesData.diploma.schools.map(
                                   (school, idx) => (
                                     <div key={idx}>
                                       <h4 className="text-sm font-semibold text-text-dark mb-1">
                                         {school.name}
                                       </h4>
-<<<<<<< HEAD
                                       <ul className="flex flex-wrap gap-3">
-=======
-                                      <ul className="space-y-0.5 flex flex-wrap gap-3">
->>>>>>> 6810fb77e29087991a8636f6bfe6bee895b46f18
                                         {school.programs.map(
                                           (program, pIdx) => (
                                             <li key={pIdx}>
@@ -777,11 +727,7 @@ export function Header() {
                                                 href={`/academics?program=${encodeURIComponent(
                                                   program
                                                 )}`}
-<<<<<<< HEAD
                                                 className="text-sm text-[#f46b13] hover:underline transition"
-=======
-                                                className="text-sm text-[#f46b13] hover:text-[#f46b13]-dark hover:underline transition-colors"
->>>>>>> 6810fb77e29087991a8636f6bfe6bee895b46f18
                                               >
                                                 {program}
                                               </Link>
@@ -800,23 +746,15 @@ export function Header() {
                               <h3 className="text-lg font-bold text-[#f46b13] mb-4">
                                 {programmesData.doctorate.title}
                               </h3>
-<<<<<<< HEAD
 
                               <div className="space-y-4 max-h-[60vh] overflow-y-auto pr-2">
-=======
-                              <div className="space-y-4 max-h-100 overflow-y-auto pr-2">
->>>>>>> 6810fb77e29087991a8636f6bfe6bee895b46f18
                                 {programmesData.doctorate.schools.map(
                                   (school, idx) => (
                                     <div key={idx}>
                                       <h4 className="text-sm font-semibold text-text-dark mb-1">
                                         {school.name}
                                       </h4>
-<<<<<<< HEAD
                                       <ul className="flex flex-wrap gap-3">
-=======
-                                      <ul className="space-y-0.5 flex flex-wrap gap-3">
->>>>>>> 6810fb77e29087991a8636f6bfe6bee895b46f18
                                         {school.programs.map(
                                           (program, pIdx) => (
                                             <li key={pIdx}>
@@ -824,11 +762,7 @@ export function Header() {
                                                 href={`/academics?program=${encodeURIComponent(
                                                   program
                                                 )}`}
-<<<<<<< HEAD
                                                 className="text-sm text-[#f46b13] hover:underline transition"
-=======
-                                                className="text-sm text-[#f46b13] hover:text-[#f46b13]-dark hover:underline transition-colors"
->>>>>>> 6810fb77e29087991a8636f6bfe6bee895b46f18
                                               >
                                                 {program}
                                               </Link>
@@ -964,7 +898,6 @@ export function Header() {
                       className="object-contain"
                     />
                   </div>
-<<<<<<< HEAD
                   <div>
                     <h1 className="text-sm font-semibold ">
                       <span className="text-[#F46B13]">Smt. Manjira Devi</span>{" "}
@@ -972,12 +905,6 @@ export function Header() {
                     </h1>
                   </div>
                 </Link>
-=======
-                  <span className="font-serif font-bold text-text-dark">
-                    SMDU
-                  </span>
-                </div>
->>>>>>> 6810fb77e29087991a8636f6bfe6bee895b46f18
                 <button
                   onClick={() => setIsMobileMenuOpen(false)}
                   className="p-2 text-text-dark hover:text-[#F46B13] transition-colors"
@@ -1023,11 +950,7 @@ export function Header() {
                                 {Object.values(programmesData).map(
                                   (category, idx) => (
                                     <div key={idx}>
-<<<<<<< HEAD
                                       <h4 className="text-xs font-bold text-[#F46B13] uppercase tracking-wider mb-2">
-=======
-                                      <h4 className="text-xs font-bold text-gold uppercase tracking-wider mb-2">
->>>>>>> 6810fb77e29087991a8636f6bfe6bee895b46f18
                                         {category.title}
                                       </h4>
                                       <ul className="space-y-1">
@@ -1047,11 +970,7 @@ export function Header() {
                                                     onClick={() =>
                                                       setIsMobileMenuOpen(false)
                                                     }
-<<<<<<< HEAD
                                                     className="block py-1 px-3 text-sm text-[#F46B13] hover:bg-grey-light rounded transition-colors"
-=======
-                                                    className="block py-1 px-3 text-sm text-gold hover:bg-grey-light rounded transition-colors"
->>>>>>> 6810fb77e29087991a8636f6bfe6bee895b46f18
                                                   >
                                                     {program}
                                                   </Link>
@@ -1106,11 +1025,7 @@ export function Header() {
                                 <div className="pl-4 py-2 space-y-4">
                                   {item.megaMenu.columns.map((column, idx) => (
                                     <div key={idx}>
-<<<<<<< HEAD
                                       <h4 className="text-xs font-bold text-[#F46B13] uppercase tracking-wider mb-2">
-=======
-                                      <h4 className="text-xs font-bold text-gold uppercase tracking-wider mb-2">
->>>>>>> 6810fb77e29087991a8636f6bfe6bee895b46f18
                                         {column.title}
                                       </h4>
                                       <ul className="space-y-1">
@@ -1121,11 +1036,7 @@ export function Header() {
                                               onClick={() =>
                                                 setIsMobileMenuOpen(false)
                                               }
-<<<<<<< HEAD
                                               className="block py-2 px-3 text-sm text-text-muted hover:text-[#F46B13] hover:bg-grey-light rounded transition-colors"
-=======
-                                              className="block py-2 px-3 text-sm text-text-muted hover:text-gold hover:bg-grey-light rounded transition-colors"
->>>>>>> 6810fb77e29087991a8636f6bfe6bee895b46f18
                                             >
                                               {subItem.label}
                                             </Link>

@@ -1,20 +1,21 @@
 "use client"
+
+import { motion } from "framer-motion"
+import Link from "next/link"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
+import { SectionHeading } from "@/components/section-heading"
+import { Button } from "@/components/ui/button"
+import { Card, CardContent } from "@/components/ui/card"
+import { ArrowRight, GraduationCap, Users, Building2, Award, Calendar, ChevronRight, Play, Quote } from "lucide-react"
 import Hero from "../components/home/Hero"
 import Highlights from "../components/home/Highlights"
 import About from "../components/home/About"
 import Programs from "../components/home/Programs"
 import CTA from "../components/home/CTA"
-<<<<<<< HEAD
 import NewsSection from "../components/home/NewsSection"
 import TestimonialsSlider from "../components/home/TestimonialsSlider"
 import CampusPreview from "../components/home/CampusPreview"
-=======
-import Blogs from "../components/home/Blogs"
-import Testimonials from "../components/home/Testimonials";
-import CampusPreview from "../components/home/CampusPreview";
->>>>>>> 6810fb77e29087991a8636f6bfe6bee895b46f18
 
 // Animation variants
 const fadeInUp = {
@@ -39,7 +40,6 @@ const stats = [
   { value: "500+", label: "Faculty Members" },
 ]
 
-<<<<<<< HEAD
 
 
 // Testimonials
@@ -70,8 +70,6 @@ const testimonials = [
   },
 ]
 
-=======
->>>>>>> 6810fb77e29087991a8636f6bfe6bee895b46f18
 export default function HomePage() {
   return (
     <main className="min-h-screen">
@@ -81,17 +79,11 @@ export default function HomePage() {
       <About/>
       <Programs/>
       <CTA/>
-<<<<<<< HEAD
       <NewsSection/>
       <TestimonialsSlider/>
       <CampusPreview/>
  
 
-=======
-      <Blogs/>
-      <Testimonials/>
-      <CampusPreview/>
->>>>>>> 6810fb77e29087991a8636f6bfe6bee895b46f18
       <Footer />
     </main>
   )

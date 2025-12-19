@@ -899,7 +899,7 @@ export function Header() {
                     />
                   </div>
                   <div>
-                    <h1 className="text-sm font-semibold ">
+                    <h1 className="text-xs sm:text-md font-semibold ">
                       <span className="text-[#F46B13]">Smt. Manjira Devi</span>{" "}
                       <span className="text-[#1a365d]">University</span>
                     </h1>

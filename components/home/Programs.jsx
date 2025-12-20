@@ -58,7 +58,7 @@ export default function Programs() {
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
             >
-              <Card className="group overflow-hidden border-0 bg-white/5 backdrop-blur-sm hover:bg-white/10 transition-all duration-300">
+              <Card className="group overflow-hidden border-0 pt-0 bg-white/5 backdrop-blur-sm hover:bg-white/10 transition-all duration-300">
                 <div className="relative h-48 overflow-hidden">
                   <img
                     src={program.image}

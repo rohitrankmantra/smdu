@@ -8,32 +8,36 @@ import { SectionHeading } from "@/components/section-heading";
 const Testimonials = () => {
     
   // Testimonials
-  const testimonials = [
-    {
-      quote:
-        "SMDU has transformed my career. The faculty's guidance and world-class infrastructure helped me achieve my dreams.",
-      name: "Priya Sharma",
-      role: "Software Engineer, Google",
-      batch: "B.Tech 2022",
-      image: "/professional-indian-woman-portrait.png",
-    },
-    {
-      quote:
-        "The holistic education at SMDU prepared me not just for a job, but for life. Forever grateful for this journey.",
-      name: "Rahul Verma",
-      role: "Management Consultant, McKinsey",
-      batch: "MBA 2021",
-      image: "/professional-indian-man-portrait.png",
-    },
-    {
-      quote:
-        "Research facilities at SMDU are unparalleled. The support for innovation is what makes this university special.",
-      name: "Dr. Anjali Gupta",
-      role: "Research Scientist, ISRO",
-      batch: "Ph.D 2020",
-      image: "/professional-woman-scientist.png",
-    },
-  ];
+ const testimonials = [
+  {
+    id: 1,
+    name: "Nitesh Kumar",
+    course: "Civil Engineering",
+    batch: "Batch 2021–2023",
+    message:
+      "Being part of Smt. Manjira Devi University was a transformative journey. The academic rigor, faculty support, and real-world exposure truly shaped my professional mindset.",
+    image: "https://images.unsplash.com/photo-1603415526960-f7e0328c63b1"
+  },
+  {
+    id: 2,
+    name: "Amrita Rawat",
+    course: "Bachelor of Physiotherapy (BPT)",
+    batch: "Batch 2020–2023",
+    message:
+      "SMDU gave me countless opportunities to learn, grow, and lead. The balance between theory and practice made me industry-ready with confidence and skills.",
+    image: "https://images.unsplash.com/photo-1544725176-7c40e5a2c9f9"
+  },
+  {
+    id: 3,
+    name: "Aryan Negi",
+    course: "Hotel Management",
+    batch: "Batch 2020–2023",
+    message:
+      "Education at SMDU goes beyond classrooms — internships, projects, and real-world learning experiences shaped my career vision beautifully.",
+    image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d"
+  }
+];
+
   return (
     <section className="py-20 relative overflow-hidden">
       <div className="container mx-auto px-6">

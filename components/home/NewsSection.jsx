@@ -11,7 +11,7 @@ const newsData = [
     title: "Winter Semester Commences with Record Enrollment",
     category: "Announcement",
     excerpt: "SMDU welcomes over 2,000 new students to its scenic campus in Uttarkashi, marking the highest enrollment in university history amid snowy Himalayan backdrop.",
-    image: "https://images.pexels.com/photos/18668499/pexels-photo-18668499.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    image: "/home/about1.jpg",
     readTime: "2 min read",
   },
   {
@@ -19,7 +19,7 @@ const newsData = [
     title: "SMDU Cultural Fest 2025: A Celebration of Diversity",
     category: "Events",
     excerpt: "The annual cultural fest brought together students from across India for vibrant performances, workshops, and networking opportunities celebrating rich traditions.",
-    image: "https://images.pexels.com/photos/20416026/pexels-photo-20416026.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    image: "/home/feature4.webp",
     readTime: "3 min read",
   },
   {

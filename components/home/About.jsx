@@ -3,10 +3,11 @@
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Award, Users } from "lucide-react"
+import { SectionHeading } from "@/components/section-heading"
 
 export default function About() {
   return (
-    <section className="py-20 relative overflow-hidden">
+    <section className="py-20 relative overflow-hidden  ">
       <div className="container mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
 
@@ -20,12 +21,12 @@ export default function About() {
             <div className="grid grid-cols-2 gap-4">
               <div className="space-y-4">
                 <img
-                  src="/university-library-interior-modern.jpg"
+                  src="/home/about1.jpg"
                   alt="Library"
                   className="rounded-2xl shadow-lg w-full h-48 object-cover"
                 />
                 <img
-                  src="/university-graduation-ceremony-students.jpg"
+                  src="/home/feature1.jpg"
                   alt="Graduation"
                   className="rounded-2xl shadow-lg w-full h-56 object-cover"
                 />
@@ -33,12 +34,12 @@ export default function About() {
 
               <div className="space-y-4 pt-8">
                 <img
-                  src="/university-classroom-students-learning.jpg"
+                  src="/home/about2.webp"
                   alt="Classroom"
                   className="rounded-2xl shadow-lg w-full h-56 object-cover"
                 />
                 <img
-                  src="/university-campus-garden-students.jpg"
+                  src="/home/about2.jpeg"
                   alt="Campus"
                   className="rounded-2xl shadow-lg w-full h-48 object-cover"
                 />
@@ -71,13 +72,11 @@ export default function About() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
           >
-            <span className="inline-block text-sm font-semibold tracking-wider uppercase mb-3 text-[#f46b13]">
-              About SMDU
-            </span>
-
-            <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-text-dark mb-6">
-              A Legacy of Academic Excellence
-            </h2>
+          <SectionHeading
+  alignment="left"
+  subtitle="About SMDU"
+  title="A Legacy of Academic Excellence"
+/>
 
             <p className="text-text-muted mb-6 leading-relaxed">
               Established with a vision to provide quality higher education,

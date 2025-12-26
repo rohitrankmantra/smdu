@@ -9,10 +9,10 @@ export default function Hero({
   title = "Shaping Tomorrow’s Leaders",
   highlight = "Today",
   subtitle = "World-class education, innovative research, and holistic development for future leaders.",
-  image = "https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=1920",
+  image = "/home/about2.jpeg",
 }) {
   return (
-    <section className="relative min-h-screen overflow-hidden bg-black">
+    <section className="relative min-h-screen overflow-hidden bg-black/40">
 
       {/* ================= BACKGROUND ================= */}
       <div className="absolute inset-0">

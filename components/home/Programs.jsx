@@ -66,9 +66,9 @@ export default function Programs() {
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
 
-                  <div
+                  {/* <div
                     className={`absolute inset-0 bg-linear-to-t ${program.overlay}`}
-                  />
+                  /> */}
                 </div>
 
                 <CardContent className="p-6">

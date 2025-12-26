@@ -7,32 +7,42 @@ import { SectionHeading } from "@/components/section-heading"
 
 const campusImages = [
   {
-    src: "https://images.pexels.com/photos/256490/pexels-photo-256490.jpeg",
-    span: "row-span-2",
+    src: "home/about1.jpg",
   },
   {
-    src: "https://images.pexels.com/photos/267885/pexels-photo-267885.jpeg",
+    src: "home/about2.jpeg",
   },
   {
-    src: "https://images.pexels.com/photos/1454360/pexels-photo-1454360.jpeg",
+    src: "home/campus1.heic",
   },
   {
-    src: "https://images.pexels.com/photos/256541/pexels-photo-256541.jpeg",
+    src: "home/campus2.jpg",
   },
   {
-    src: "https://images.pexels.com/photos/159775/library-la-trobe-study-students-159775.jpeg",
+    src: "home/campus3.heic",
   },
   {
-    src: "https://images.pexels.com/photos/207691/pexels-photo-207691.jpeg",
-    span: "row-span-2",
+    src: "home/campus4.jpg",
   },
+  {
+    src: "home/campus5.heic",
+  },
+  {
+    src: "home/campus6.heic",
+  },
+    {
+    src: "home/campus7.heic",
+  },
+  {
+    src: "home/campus8.heic",
+  }
 ]
 
 export default function CampusPreview() {
   return (
     <section className="py-20 bg-white relative overflow-hidden">
       {/* soft background */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(244,107,19,0.08)_0%,transparent_55%)]" />
+      {/* <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(244,107,19,0.08)_0%,transparent_55%)]" /> */}
 
       <div className="container mx-auto px-4 relative z-10">
         <SectionHeading
@@ -59,7 +69,7 @@ export default function CampusPreview() {
               <img
                 src={item.src}
                 alt="SMDU Campus"
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                className="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-110"
                 loading="lazy"
               />
 
@@ -72,7 +82,7 @@ export default function CampusPreview() {
           ))}
         </div>
 
-        {/* CTA */}
+        {/* CTA
         <div className="text-center mt-14">
           <Button
             size="lg"
@@ -81,7 +91,7 @@ export default function CampusPreview() {
             Explore Campus
             <ArrowRight className="w-5 h-5 ml-2" />
           </Button>
-        </div>
+        </div> */}
       </div>
     </section>
   )
